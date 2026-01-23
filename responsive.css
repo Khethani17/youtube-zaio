@@ -1,0 +1,164 @@
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
+  /* NAVBAR  */
+  nav {
+    padding: 0 12px;
+  }
+
+  #menu {
+    min-width: auto;
+  }
+
+  #menu svg {
+    margin-left: 8px;
+  }
+
+  #menu svg:first-child {
+    margin-left: 0;
+  }
+
+  #profile button,
+  .notifications-icon {
+    display: none;
+  }
+
+  #profile .profile-pic {
+    height: 32px;
+    width: 32px;
+  }
+
+  /* SEARCH */
+  #search {
+    margin-left: 8px;
+    flex: 1;
+    max-width: none;
+  }
+
+  #search-input {
+    display: none;
+  }
+
+  #search-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    padding: 8px;
+  }
+
+  #mic-icon {
+    display: none;
+  }
+
+  /* SIDEBAR  */
+  .side-bar {
+    display: none;
+  }
+
+  /* MAIN CONTENT*/
+  .video-main-menu {
+    width: 100vw;
+  }
+
+  main {
+    height: auto;
+  }
+
+  /*  CATEGORIES */
+  .videos-catergories {
+    padding: 0 12px;
+    height: 48px;
+  }
+
+  .videos-catergories button {
+    font-size: 0.75rem;
+    padding: 0 10px;
+    height: 28px;
+  }
+
+  /*  VIDEOS */
+  .videos-section {
+    padding: 16px 12px;
+    height: auto;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 24px 0;
+  }
+
+  .video .video-details p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .video .thumbnail {
+    border-radius: 0;
+    margin-bottom: 8px;
+  }
+
+  .cagories-footer {
+    padding: 16px 12px;
+  }
+
+  .footer-section {
+    flex-wrap: wrap;
+  }
+
+  .footer-section span {
+    font-size: 12px;
+    margin-right: 8px;
+    margin-bottom: 4px;
+  }
+}
+
+/* TABLET RESPONSIVENESS */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .video-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 32px 16px;
+  }
+
+  #search {
+    max-width: 500px;
+  }
+
+  #search-input {
+    width: 100%;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  nav {
+    padding: 0 8px;
+  }
+
+  #menu svg {
+    margin-left: 4px;
+  }
+
+  .videos-section {
+    padding: 12px 8px;
+  }
+
+  .video-grid {
+    gap: 16px 0;
+  }
+
+  .video .profile img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .video .video-details p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+  
